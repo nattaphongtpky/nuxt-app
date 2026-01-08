@@ -1,8 +1,5 @@
 <script setup>
-import IconLabtop from "~/assets/picture/laptop.png";
-import IconBook from "~/assets/picture/book.png";
-import IconPencil from "~/assets/picture/pencil.png";
-import IconStart from "~/assets/picture/star.png";
+
 import androidDownload from "~/assets/picture/android-download.png";
 import iosDownload from "~/assets/picture/download-ios-app.png";
 import QRCode from "~/assets/picture/QR_code_for_mobile_English_Wikipedia 2.png";
@@ -22,7 +19,7 @@ import Phone from "~/assets/picture/Phone.png";
                     <img :src="QRCode" alt="QRCode" class="bg-white rounded-xl p-2">
                     <div class="flex justify-between gap-4 my-4">
                         <button class="hover:cursor-pointer">
-                            <img :src="androidDownload" alt="iosDownload" >
+                            <img :src="androidDownload" alt="iosDownload">
                         </button>
                         <button class="hover:cursor-pointer">
                             <img :src="iosDownload" alt="iosDownload">
@@ -31,8 +28,7 @@ import Phone from "~/assets/picture/Phone.png";
                 </div>
             </div>
             <div class="lg:w-full lg:h-full w-auto h-auto max-lg:hidden">
-                <img :src="Phone" class="lg:-right-10 lg:absolute" />
-                <!-- <img :src="Phone" class="w-64 md:w-80 lg:w-auto lg:-right-10 lg:absolute" /> -->
+                <img :src="Phone" alt="Phone with Hand" class="-right-10 lg:absolute" />
             </div>
         </div>
     </section>
