@@ -1,6 +1,6 @@
 <template>
   <section id="courses"
-    class="relative z-10 overflow-hidden bg-brand-cream -mb-48 py-20 px-4 min-h-screen [clip-path:polygon(0_0,100%_0,100%_85%,0_100%)]">
+    class="relative z-10 overflow-hidden bg-brand-cream lg:-mb-48 mb-0 lg:py-20 py-8 px-4 min-h-screen h-full lg:[clip-path:polygon(0_0,100%_0,100%_85%,0_100%)]">
     <div class="absolute inset-0 opacity-80 pointer-events-none">
       <div class="absolute top-10 left-20">
         <img :src="IconLabtop" />
@@ -17,8 +17,8 @@
     </div>
 
     <div class="container max-w-6xl mx-auto relative grid lg:grid-cols-2 gap-4 items-center">
-      <div>
-        <img src="~/assets/picture/img-courses.png" class="rounded-2xl border-[1rem] border-white -ms-48" />
+      <div class="flex max-lg:justify-center">
+        <img src="~/assets/picture/img-courses.png" class="rounded-2xl border-[1rem] border-white lg:-ms-48 ms-0" />
       </div>
 
       <div class="space-y-2 flex flex-col justify-between h-full">
@@ -38,11 +38,11 @@
             บุคคลากรและเกิดประโยชน์สูงสุดของผู้เรียน
           </span>
         </div>
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid lg:grid-cols-2 gap-8">
           <div v-for="(course, index) in courses" :key="index"
             class="p-4 rounded-xl bg-white hover:shadow-2xl transition-shadow shadow-[0_24px_60px_-34px_rgba(245,103,76,1)] hover:cursor-pointer">
             <div class="flex justify-between items-center relative">
-              <p className="text-brand-primary font-bold mb-2">{{
+              <p className="text-orange-500 font-bold mb-2">{{
                 course.subtitle
               }}</p>
               <img :src="course.src" class="w-36 h-28 absolute -right-16 -top-16" />

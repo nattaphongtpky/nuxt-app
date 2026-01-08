@@ -1,12 +1,12 @@
 <template>
     <section id="home"
-        class="relative z-10 -mb-48 min-h-screen h-267.5 overflow-hidden [clip-path:polygon(0_0,100%_0,100%_100%,0_90%)] bg-[linear-gradient(180deg,var(--color-brand-primary)_60%,var(--color-brand-dark)_100%)]">
+        class="relative z-10 lg:-mb-48 mb-0 min-h-screen lg:h-267.5 h-full overflow-hidden lg:[clip-path:polygon(0_0,100%_0,100%_100%,0_90%)] bg-[linear-gradient(180deg,var(--color-brand-primary)_60%,var(--color-brand-dark)_100%)]">
         <!-- [clip-path:polygon(0_0,100%_0,100%_100%,0_94%)] -->
-        <div class="container relative pt-20 max-w-6xl mx-auto md:pt-36 mb-32">
+        <div class="container relative pt-20 lg:max-w-6xl max-w-full lg:mx-auto md:pt-36 mb-32">
             <!-- grid lg:grid-cols-2 gap-2 lg:gap-4 items-center ms-8 -->
-            <div class="flex md:flex-row flex-col gap-2 lg:gap-4 items-end ms-8">
+            <div class="flex lg:flex-row flex-col gap-2 lg:gap-4 lg:items-end items-center lg:ms-8 ms:0">
                 <!-- min-h-[calc(100vh-6rem)] -->
-                <div mdiv class="text-center lg:text-left py-8 lg:py-0">
+                <div mdiv class="text-center lg:text-left py-16 md:py-4 lg:py-0">
                     <span class="text-5xl md:text-6xl lg:text-8xl font-bold text-white mb-4">
                         Klass<br />Bits
                     </span>
@@ -54,9 +54,10 @@
 
                 </div>
 
-                <div class="relative h-full">
-                    <div class="w-48 h-48 md:w-2xl md:h-full flex justify-end items-end">
-                        <img src="~/assets/picture/lion-hero.png" />
+                <div class="h-full">
+                    <div
+                        class="w-4/5 h-full lg:w-2xl lg:h-full flex lg:justify-end justify-center lg:items-end items-center">
+                        <img src="~/assets/picture/lion-hero.png" class="translate-x-12 lg:translate-x-0" />
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <template>
-    <div class="relative bg-white rounded-4xl shadow-2xl p-8 lg:p-16 border-none z-30 -mt-48 max-w-6xl mx-auto">
+    <div class="relative bg-white rounded-4xl shadow-2xl p-4 lg:p-16 border-none z-30 lg:-mt-48 max-w-6xl mx-auto">
         <div class="grid lg:grid-cols-2 gap-4">
-            <div class="-ml-32">
+            <div class="lg:-ml-32 ml-12">
                 <img src="~/assets/picture/Img-about.png" class="object-cover" />
             </div>
 
@@ -35,11 +35,11 @@
             </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-x-12 gap-y-20 mt-16">
+        <div className="grid lg:grid-cols-3 gap-x-12 gap-y-20 mt-16">
             <div v-for="feature in features" :key="feature.title"
                 class="p-4 space-y-8 hover:shadow-lg rounded-xl transition-shadow shadow-[0_4px_10px_0_rgba(220,225,255,1)] hover:cursor-pointer">
                 <div class="flex justify-between items-center relative">
-                    <p className="text-brand-primary font-bold mb-2">{{
+                    <p className="text-orange-500 font-bold mb-2">{{
                         feature.title
                     }}</p>
                     <img :src="feature.src" class="w-36 h-28 absolute right-0 -top-16" />

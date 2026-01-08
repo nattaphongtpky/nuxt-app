@@ -4,7 +4,7 @@ import Carousel from "./Carousel.vue";
 
 <template>
     <section id="about"
-        class="py-20 z-[9] px-4 bg-gray-50 relative -mb-48 min-h-screen h-267.5 overflow-hidden [clip-path:polygon(0_0,100%_0,100%_100%,0_90%)]">
+        class="lg:py-20 z-[9] px-4 bg-gray-50 relative lg:-mb-48 mb-0 min-h-screen lg:h-267.5 h-full overflow-hidden lg:[clip-path:polygon(0_0,100%_0,100%_100%,0_90%)]">
         <img src="~/assets/picture/bubble-1.png" class="absolute top-[10%] -right-12" />
         <img src="~/assets/picture/bubble-2.png" class="absolute bottom-[10%] -left-12" />
 

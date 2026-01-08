@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="py-20 px-4 bg-brand-second relative">
+  <section id="about" class="py-20 -mt-36 px-8 bg-brand-second relative">
     <div class="container mx-auto z-20">
       <Card :features="features" :tags="tags" />
     </div>
